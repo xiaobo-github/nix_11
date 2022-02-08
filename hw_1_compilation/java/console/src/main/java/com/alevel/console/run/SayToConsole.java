@@ -1,4 +1,5 @@
 package com.alevel.console.run;
+
 import org.apache.commons.lang3.*;
 
 public class SayToConsole{

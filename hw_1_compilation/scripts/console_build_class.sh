@@ -18,4 +18,4 @@ javac -sourcepath java/console/src/main/java/ -d build/classes/ -cp ./java/conso
 echo "Start program.."
 echo ""
 
-java -cp ./build/classes:./java/console/libs/commons-lang3-3.11.jar com.alevel.console.Main
+java -cp build/classes:./libs/commons-lang3-3.11.jar:. com.alevel.console.Main
