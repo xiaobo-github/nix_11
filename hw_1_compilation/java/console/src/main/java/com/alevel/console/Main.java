@@ -1,9 +1,11 @@
 package com.alevel.console;
-import com.alevel.console.run.SayToConsole;
+
+import com.alevel.console.Reverse;
+import com.alevel.console.JSON;
 
 public class Main{
     public static void main(String[] args){
-            SayToConsole sayToConsole = new SayToConsole();
-            sayToConsole.say();
+            Reverse.make();
+            JSON.make();
         }
 }
