@@ -13,10 +13,11 @@ libs=${lp}${lcl}":"${lp}${lfj}
 echo ${libs}
 
 #compile
-echo "Compile..."
+echo "Compile from console..."
 javac -sourcepath ${rp} -d build/classes/ -cp ${libs} ${rp}com/alevel/console/Main.java
 
 #run
-echo "Start program.."
+echo "Program run..."
 echo ""
 java -cp build/classes:${libs} com.alevel.console.Main
+

@@ -1,11 +1,11 @@
 package com.alevel.console;
 
 import com.alevel.console.Reverse.*;
-import com.alevel.console.JSON.*;
+import com.alevel.console.Random.*;
 
 public class Main{
     public static void main(String[] args){
             MakeReverse.make("!dlroW olleH");
-            MakeJSON.make("Hello World!");
+            MakeRandom.make("Hello World!");
         }
 }
