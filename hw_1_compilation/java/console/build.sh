@@ -2,8 +2,15 @@
 
 #repeat part of path
 rp="src/main/java/"
+lp="./libs/"
 #path to libs
-libs="./libs/commons-lang3-3.11.jar"
+lclVersion="3.11"
+lcl="commons-lang3-${lclVersion}.jar"
+lfjVersion="1.9"
+lfj="commons-text-${lfjVersion}.jar"
+libs=${lp}${lcl}":"${lp}${lfj}
+
+echo ${libs}
 
 #compile
 echo "Compile..."
@@ -13,5 +20,3 @@ javac -sourcepath ${rp} -d build/classes/ -cp ${libs} ${rp}com/alevel/console/Ma
 echo "Start program.."
 echo ""
 java -cp build/classes:${libs} com.alevel.console.Main
-
-
