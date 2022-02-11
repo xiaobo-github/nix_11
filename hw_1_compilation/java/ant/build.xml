@@ -18,8 +18,8 @@
         <jar destfile="build/jar/demoAnt.jar" basedir="build/classes">
             <manifest>
                 <attribute name="Main-Class" value="com.alevel.ant.Main"/>
-                <attribute name="Class-Path" value="libs/**/*.jar"/>
-                <!-- <attribute name="Class-Path" value="libs/commons-lang3-3.11.jar"/> -->
+                <!-- <attribute name="Class-Path" value="libs/**/*.jar"/> -->
+                <attribute name="Class-Path" value="libs/commons-lang3-3.11.jar libs/commons-text-1.9.jar"/>
             </manifest>
             <zipgroupfileset dir="libs" includes="*.jar"/>
         </jar>
