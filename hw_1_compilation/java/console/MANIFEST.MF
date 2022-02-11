@@ -1,0 +1,2 @@
+Class-Path: commons-lang3-3.11.jar commons-text-1.9.jar
+Main-Class: com.alevel.console.Main
