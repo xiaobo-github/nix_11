@@ -3,7 +3,7 @@
 #please enter ". ./run_all.sh" to start
 
 #run from console
-cd ../java/console/
+cd java/console/
 ./run.sh
 
 #run with ant
