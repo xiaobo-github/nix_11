@@ -6,12 +6,14 @@ public final class StringStorage {
     public static final String [] MAIN_MENU_MESSAGE = new String [] {
             "1 - Find the sum of all numbers in a string,",
             "2 - Counting and sorting characters(Cyrillic/Latin) in a string,",
+            "3 - Calculate lesson end time,",
             "0 - Exit from the program."
     };
     public static final String [] MAIN_QUESTIONS_MESSAGE = new String [] {
             "See ya later!",
             "Please enter your string:",
-            "Please enter your string:"
+            "Please enter your string:",
+            "Please enter lesson number(1-10):"
     };
     public static final String CURSOR = ">";
     static final int LENGTH_MAIN_MENU_MESSAGE = MAIN_MENU_MESSAGE.length-1;

@@ -15,6 +15,10 @@ public final class Questions {
                 UI.showMainMenuQuestion(Integer.valueOf(line));
                 UI.showAnswerMessage(CountCharactersString.Count(Reader.readLine()));
             }
+            case "3" -> {
+                UI.showMainMenuQuestion(Integer.valueOf(line));
+                UI.showAnswerMessage(EndOfLessons.calculate(Reader.readLine()));
+            }
             case "0" -> {
                 UI.showByeMessage(Integer.valueOf(line));
                 System.exit(0);
