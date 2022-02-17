@@ -15,6 +15,7 @@ public final class CountCharactersString {
             workString = new StringBuilder(workString.toString().replaceAll("[" + originChar + "]", ""));
             originString.append(originChar);
         }while (workString.length()>0);
+
         int length = originString.length();
         Symbol[] symbols = new Symbol[length];
         for (int i = 0; i < length; i++) {

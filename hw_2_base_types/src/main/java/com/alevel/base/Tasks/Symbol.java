@@ -23,13 +23,13 @@ public class Symbol implements Comparable<Symbol> {
 
     @Override
     public String toString() {
-        return ""+character+
-                " - "+count+
+        return "" + character +
+                " - " + count +
                 "\n";
     }
 
     @Override
     public int compareTo(Symbol check) {
-        return (check.count-this.count);
+        return (check.count - this.count);
     }
 }
