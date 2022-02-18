@@ -22,7 +22,7 @@ public final class UI {
     }
 
     public static void showByeMessage(){
-        showAnimateMessage(GENERAL_QUESTIONS_MESSAGE[0]);
+        showAnimateMessage(GENERAL_QUESTIONS_MESSAGE[0]+"\n");
     }
 
     public static void showMainMenuQuestion(int id){
