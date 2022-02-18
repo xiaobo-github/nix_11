@@ -9,7 +9,7 @@ public final class EndOfLessons {
         int numberOfLesson = Integer.valueOf(inNumberOfLesson);
         int lastLesson = 10;
         if(numberOfLesson < 1 | numberOfLesson > lastLesson){
-            return "";
+            return "..Hey,wait a minute.. This input is invalid! Lesson number must be from 1 to "+lastLesson+",\nbut your input is: "+numberOfLesson;
         }
 
         int secondInAMinute = 60;

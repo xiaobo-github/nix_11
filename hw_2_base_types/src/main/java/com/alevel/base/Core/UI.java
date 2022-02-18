@@ -26,9 +26,11 @@ public final class UI {
     }
 
     public static void showMainMenuQuestion(int id){
+        showMessageln("");
         showMessage(MAIN_MENU_MESSAGE[id]);
         showMessageln(PRE_QUESTION_MESSAGE);
         showMessageln(GENERAL_QUESTIONS_MESSAGE[id]);
+        showMessage(CURSOR);
     }
 
     public static void showMessageln(Object message){
