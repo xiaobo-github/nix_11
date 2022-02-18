@@ -5,7 +5,7 @@ import java.util.Arrays;
 public final class CountCharactersString {
     private CountCharactersString(){}
 
-    public static String Count (String string){
+    public static String calculate(String string){
         string = string.replaceAll("[^a-zA-Zа-яА-Я]","");
         if(string.length()<1) return "";
         StringBuilder workString = new StringBuilder(string);

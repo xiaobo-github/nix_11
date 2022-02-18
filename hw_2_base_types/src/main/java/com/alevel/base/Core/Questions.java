@@ -2,30 +2,37 @@ package com.alevel.base.Core;
 
 import com.alevel.base.Tasks.*;
 
+import java.util.function.UnaryOperator;
+
 public final class Questions {
     private Questions(){}
 
     public static void mainMenuQuestion(String line) {
         switch (line) {
             case "1" -> {
-                UI.showMainMenuQuestion(Integer.valueOf(line));
-                UI.showAnswerMessage(SumOfNumbersInString.calculate(Reader.readLine()));
+                while (menuQuestion(Integer.valueOf(line),  SumOfNumbersInString::calculate)) {}
             }
             case "2" -> {
-                UI.showMainMenuQuestion(Integer.valueOf(line));
-                UI.showAnswerMessage(CountCharactersString.Count(Reader.readLine()));
+                while (menuQuestion(Integer.valueOf(line),  CountCharactersString::calculate)) {}
             }
             case "3" -> {
-                UI.showMainMenuQuestion(Integer.valueOf(line));
-                UI.showAnswerMessage(EndOfLessons.calculate(Reader.readLine()));
+                while (menuQuestion(Integer.valueOf(line),  EndOfLessons::calculate)) {}
             }
-            case "0" -> {
-                UI.showByeMessage(Integer.valueOf(line));
+            case "" -> {
+                UI.showByeMessage();
                 System.exit(0);
             }
             default -> {
                 UI.showInputErrorMessage();
             }
         }
+    }
+
+    static boolean menuQuestion(int questionId, UnaryOperator<String> task){
+        UI.showMainMenuQuestion(questionId);
+        String answer = task.apply(Reader.readLine());
+        if (answer.equals("")) return false;
+        UI.showAnswerMessage(answer);
+        return true;
     }
 }

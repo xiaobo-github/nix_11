@@ -3,13 +3,13 @@ package com.alevel.base.Tasks;
 public final class SumOfNumbersInString {
     private SumOfNumbersInString(){}
 
-    public static int calculate(String string){
+    public static String calculate(String string){
         string = string.replaceAll("\\D","");
-        if(string.length() < 1) return 0;
-        int res = 0;
+        if(string.length() < 1) return "";
+        int calc = 0;
         for (char character: string.toCharArray()) {
-            res += Character.getNumericValue(character);
+            calc += Character.getNumericValue(character);
         }
-        return res;
+        return ""+calc;
     }
 }

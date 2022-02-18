@@ -6,13 +6,7 @@ public final class UI {
     private UI(){}
 
     public static void showMainMenu(){
-        showMessageln("");
-        showMessageln(MAIN_LEGEND_MESSAGE);
-        for (String i: MAIN_MENU_MESSAGE) {
-            showMessage("\t");
-            showMessageln(i);
-        }
-        showMessage(CURSOR);
+        showMenu(MAIN_MENU_MESSAGE,MAIN_LEGEND_MESSAGE,CURSOR);
     }
 
     public static void showChar(char character){
@@ -27,22 +21,19 @@ public final class UI {
         showMessageln(INPUT_ERROR_MESSAGE);
     }
 
-    public static void showByeMessage(int id){
-        Animator animator = new Animator(MAIN_QUESTIONS_MESSAGE[id]);
-        animator.run();
+    public static void showByeMessage(){
+        showAnimateMessage(GENERAL_QUESTIONS_MESSAGE[0]);
     }
 
     public static void showMainMenuQuestion(int id){
-        showMessageln(MAIN_QUESTIONS_MESSAGE[id]);
+        showMessage(MAIN_MENU_MESSAGE[id]);
+        showMessageln(PRE_QUESTION_MESSAGE);
+        showMessageln(GENERAL_QUESTIONS_MESSAGE[id]);
     }
 
     public static void showMessageln(Object message){
         showMessage(message);
-        System.out.println();
-    }
-
-    public static void showMessage(Object message){
-        System.out.print(message);
+        showMessage("\n");
     }
 
     public static void showAnswerMessage(Object answer){
@@ -50,5 +41,24 @@ public final class UI {
         showMessageln(answer);
     }
 
+    public static void showMenu(String[] myMenu, String legend, String cursor){
+        showMessageln("");
+        showMessageln(legend);
+        for (int i = 1; i < myMenu.length; i++) {
+            showMessage("\t");
+            showMessageln(""+i+" - "+myMenu[i]);
+        }
+        showMessage("\t");
+        showMessageln(myMenu[0]);
+        showMessage(cursor);
+    }
 
+    public static void showAnimateMessage(String message){
+        Animator animator = new Animator(message);
+        animator.run();
+    }
+
+    public static void showMessage(Object message){
+        System.out.print(message);
+    }
 }
