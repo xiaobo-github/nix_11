@@ -1,6 +1,7 @@
 package com.alevel.base.Storage;
 
 public final class StringStorage {
+
     private StringStorage(){}
 
     public static final String [] MAIN_MENU_MESSAGE = new String [] {

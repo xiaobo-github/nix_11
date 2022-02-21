@@ -1,6 +1,7 @@
 package com.alevel.base.Tasks;
 
 public final class SumOfNumbersInString {
+
     private SumOfNumbersInString(){}
 
     public static String calculate(String string){

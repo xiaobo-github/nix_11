@@ -1,6 +1,7 @@
 package com.alevel.base.Tasks;
 
 public class Symbol implements Comparable<Symbol> {
+
     char character;
     int count;
 

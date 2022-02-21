@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Reader{
+
     private static Reader instance;
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

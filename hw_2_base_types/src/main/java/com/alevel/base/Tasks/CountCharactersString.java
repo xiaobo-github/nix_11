@@ -3,6 +3,7 @@ package com.alevel.base.Tasks;
 import java.util.Arrays;
 
 public final class CountCharactersString {
+
     private CountCharactersString(){}
 
     public static String calculate(String string){

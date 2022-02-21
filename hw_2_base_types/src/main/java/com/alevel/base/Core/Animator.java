@@ -1,6 +1,7 @@
 package com.alevel.base.Core;
 
 public class Animator {
+
     String animatedString;
 
     public Animator(String animateString){
@@ -21,5 +22,4 @@ public class Animator {
             }
         }
     }
-
 }

@@ -5,6 +5,7 @@ import com.alevel.base.Tasks.*;
 import java.util.function.UnaryOperator;
 
 public final class Questions {
+
     private Questions(){}
 
     public static void mainMenuQuestion(String line) {

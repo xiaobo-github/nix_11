@@ -3,6 +3,7 @@ package com.alevel.console.Random;
 import org.apache.commons.text.*;
 
 public class MakeRandom{
+
         public static void make(int stringSize){
             RandomStringGenerator generator = new RandomStringGenerator.Builder()
                     .withinRange('a', 'z').build();
