@@ -3,6 +3,9 @@ package com.alevel.Demo.Utils;
 import static com.alevel.Demo.Storage.Strings.*;
 
 public class UIUtil {
+    public static void showMessagef(String format, Object ... args) {
+        System.out.printf(format,args);
+    }
     public static void showMessage(Object message){
         System.out.print(message);
     }

@@ -29,7 +29,7 @@ public class Menu {
         if(menuItems != null)
         for(int i=0; i<menuItems.length;i++){
             String description = Strings.TAB + (humanize + i) + Strings.BRACKET + menuItems[i].description;
-            System.out.printf(Strings.FORMAT_ITEM,description, menuItems[i].example);
+            UIUtil.showMessagef(Strings.FORMAT_ITEM,description, menuItems[i].example);
         }
     }
 
