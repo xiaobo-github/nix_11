@@ -5,5 +5,4 @@ public abstract class Item {
     public String example;
 
     public abstract String work();
-
 }
