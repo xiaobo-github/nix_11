@@ -7,4 +7,4 @@ cd ../
 cd hw_3_strings/
 #rm dependency-reduced-pom.xml
 mvn clean package
-java -jar target/main.jar "hello world" 3 7
+java -jar target/main.jar
