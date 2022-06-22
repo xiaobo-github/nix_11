@@ -1,7 +1,6 @@
-package com.alevel.Demo.MainMenu;
+package com.alevel.menu;
 
 public interface Item {
     String work();
     String getDescription();
-    String getExample();
 }

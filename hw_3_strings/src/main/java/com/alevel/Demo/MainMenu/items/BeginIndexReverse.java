@@ -5,12 +5,7 @@ import com.alevel.Demo.Utils.Reader;
 import com.alevel.Demo.MainMenu.Item;
 import com.alevel.Demo.Storage.Strings;
 
-public class BeginIndexReverse extends Item {
-        public BeginIndexReverse(){
-            this.description = Strings.ITEM_BI_DESCRIPTION;
-            this.example = Strings.ITEM_BI_EXAMPLE;
-        }
-
+public class BeginIndexReverse implements Item {
         @Override
         public String work() {
             String origin = Reader.readLine(Strings.MAIN_QUESTION);
@@ -19,4 +14,14 @@ public class BeginIndexReverse extends Item {
             System.out.println(beginIndex);
             return ReverseStringUtil.reverse(origin,beginIndex);
         }
+
+    @Override
+    public String getDescription() {
+        return Strings.ITEM_BI_DESCRIPTION;
     }
+
+    @Override
+    public String getExample() {
+        return Strings.ITEM_BI_EXAMPLE;
+    }
+}

@@ -1,8 +1,8 @@
-package com.alevel.Demo.MainMenu.items;
+package com.alevel.menu.items;
 
-import com.alevel.Demo.Utils.UIUtil;
-import com.alevel.Demo.MainMenu.Item;
-import com.alevel.Demo.Storage.Strings;
+import com.alevel.menu.Item;
+import com.alevel.storage.Strings;
+import com.alevel.utils.UIUtil;
 
 public class Exit implements Item {
     @Override
@@ -15,10 +15,5 @@ public class Exit implements Item {
     @Override
     public String getDescription() {
         return Strings.ITEM_EXIT_DESCRIPTION;
-    }
-
-    @Override
-    public String getExample() {
-        return "";
     }
 }

@@ -5,15 +5,20 @@ import com.alevel.Demo.Utils.Reader;
 import com.alevel.Demo.MainMenu.Item;
 import com.alevel.Demo.Storage.Strings;
 
-public class SimpleReverse extends Item {
-    public SimpleReverse(){
-        this.description = Strings.ITEM_SIMPLE_DESCRIPTION;
-        this.example = Strings.ITEM_SIMPLE_EXAMPLE;
-    }
-
+public class SimpleReverse implements Item {
     @Override
     public String work() {
         String origin = Reader.readLine(Strings.MAIN_QUESTION);
         return ReverseStringUtil.reverse(origin);
+    }
+
+    @Override
+    public String getDescription() {
+        return Strings.ITEM_SIMPLE_DESCRIPTION;
+    }
+
+    @Override
+    public String getExample() {
+        return Strings.ITEM_SIMPLE_EXAMPLE;
     }
 }
