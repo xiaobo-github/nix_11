@@ -10,7 +10,7 @@ public class BeginIndexReverse implements Item {
         public String work() {
             String origin = Reader.readLine(Strings.MAIN_QUESTION);
             int maxIndex = (origin.length()-1);
-            int beginIndex = Reader.readInt(Strings.BEGIN_INDEX_QUESTION+0+Strings.TO+maxIndex+Strings.COLON_BRACKET,0,maxIndex);
+            int beginIndex = Reader.readInt(String.format(Strings.BEGIN_INDEX_QUESTION_F,0,maxIndex),0,maxIndex);
             System.out.println(beginIndex);
             return ReverseStringUtil.reverse(origin,beginIndex);
         }
